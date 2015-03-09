@@ -21,22 +21,24 @@ public class NewTwit {
         int op;
         MetoTwit obx=new MetoTwit();
         
-        op=Integer.parseInt(JOptionPane.showInputDialog("Escoja la opcion deseada\n")+
+        do{
+        op=Integer.parseInt(JOptionPane.showInputDialog("Escoja la opcion deseada\n"+
                                        ("1-->Mandar Twit\n")+
                                         ("2-->Buscar Twit\n")+
-                                        ("3-->Mirar ultimos twits")+
-                                        ("4-->enviar mensaje"));
+                                        ("3-->Mirar ultimos twits\n")+
+                                        ("4-->enviar mensaje")));
         switch(op=0){
             case 1:obx.post();
                 break;
-            case 2:
+            case 2:obx.buscaJastak();
                 break;
-            case 3:
+            case 3:obx.GettinTimeline();
                 break;
-            case 4:
+            case 4:obx.mensajePrivado();
                 break;
-            case 5:
+            case 5:System.exit(0);
         }
+        }while(op==5);
     }
     
 }

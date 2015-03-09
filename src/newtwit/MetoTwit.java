@@ -30,10 +30,10 @@ public class MetoTwit {
         try {
             ConfigurationBuilder cb = new ConfigurationBuilder();
             cb.setDebugEnabled(true)
-                    .setOAuthConsumerKey("consumerKey")
-                    .setOAuthConsumerSecret("consumerSecret")
-                    .setOAuthAccessToken("accessToken")
-                    .setOAuthAccessTokenSecret("accessTokenSecret");
+                    .setOAuthConsumerKey("x")
+                    .setOAuthConsumerSecret("x")
+                    .setOAuthAccessToken("x")
+                    .setOAuthAccessTokenSecret("x");
 
             Twitter twitter = new TwitterFactory(cb.build()).getInstance();
             Status status = twitter.updateStatus("test");
@@ -56,10 +56,10 @@ public class MetoTwit {
     public void buscaJastak() throws TwitterException {
         ConfigurationBuilder cb = new ConfigurationBuilder();
         cb.setDebugEnabled(true)
-                .setOAuthConsumerKey("consumerKey")
-                .setOAuthConsumerSecret("consumerSecret")
-                .setOAuthAccessToken("accessToken")
-                .setOAuthAccessTokenSecret("accessTokenSecret");
+                .setOAuthConsumerKey("x")
+                .setOAuthConsumerSecret("x")
+                .setOAuthAccessToken("2x")
+                .setOAuthAccessTokenSecret("x");
 
         Twitter twitter = new TwitterFactory(cb.build()).getInstance();
         String bus = JOptionPane.showInputDialog("Que # esta buscando");
@@ -78,10 +78,10 @@ public class MetoTwit {
     public void post() throws TwitterException {
         ConfigurationBuilder cb = new ConfigurationBuilder();
         cb.setDebugEnabled(true)
-                .setOAuthConsumerKey("consumerKey")
-                .setOAuthConsumerSecret("consumerSecret")
-                .setOAuthAccessToken("accessToken")
-                .setOAuthAccessTokenSecret("accessTokenSecret");
+                .setOAuthConsumerKey("x")
+                .setOAuthConsumerSecret("x")
+                .setOAuthAccessToken("x")
+                .setOAuthAccessTokenSecret("x");
 
         Twitter twitter = new TwitterFactory(cb.build()).getInstance();
         String latestStatus = null;
@@ -99,10 +99,10 @@ public class MetoTwit {
         
         ConfigurationBuilder cb = new ConfigurationBuilder();
         cb.setDebugEnabled(true)
-                .setOAuthConsumerKey("consumerKey")
-                .setOAuthConsumerSecret("consumerSecret")
-                .setOAuthAccessToken("accessToken")
-                .setOAuthAccessTokenSecret("accessTokenSecret");
+                .setOAuthConsumerKey("x")
+                .setOAuthConsumerSecret("x")
+                .setOAuthAccessToken("x")
+                .setOAuthAccessTokenSecret("x");
 
         Twitter twitter = new TwitterFactory(cb.build()).getInstance();
         amigo=JOptionPane.showInputDialog("¿A quien quieres enviarlo?");
